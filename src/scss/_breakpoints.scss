@@ -1,0 +1,17 @@
+@mixin respond_large {
+    @media screen and (max-width: 1300px) {@content};
+}
+
+@mixin respond_medium {
+    @media screen and (max-width: 1024px) {@content};
+}
+
+@mixin respond_medium_height {
+    @media screen and (max-height: 1000px) {@content};
+}
+
+
+@mixin respond_small {
+    @media screen and (max-width: 767px) {@content};
+}
+
