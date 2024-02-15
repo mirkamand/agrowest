@@ -9,7 +9,7 @@ const MainNavbar = () => {
   const [isNavbarFixed, setNavbarFixed] = useState(false);
 
   const fixed_navbar_handler = () => {
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 600) {
       setNavbarFixed(true);
     } else if (window.scrollY <= 20) {
       setNavbarFixed(false);
