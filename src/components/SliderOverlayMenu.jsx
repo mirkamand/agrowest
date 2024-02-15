@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { overlay_images_data } from "../data/data";
@@ -16,7 +16,6 @@ const SliderOverlayMenu = ({ slideIndex }) => {
 
   React.useEffect(() => {
     swiperRef.current?.swiper.slideTo(slideIndex);
-    console.log(slideIndex);
   }, [slideIndex]);
 
   return (

@@ -1,11 +1,22 @@
 import React, { useRef, useState } from "react";
 import { menu_data } from "../data/data";
-import MenuBtn from "./button";
+import MenuBtn from "./MenuBtn";
 import SliderOverlayMenu from "./SliderOverlayMenu";
 
 const MainNavbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [isLinkActive, setIsLinkActive] = useState(null);
+  const [isNavbarFixed, setNavbarFixed] = useState(false);
+
+  const fixed_navbar_handler = () => {
+    if (window.scrollY >= 300) {
+      setNavbarFixed(true);
+    } else if (window.scrollY <= 20) {
+      setNavbarFixed(false);
+    }
+  };
+
+  window.addEventListener("scroll", fixed_navbar_handler);
 
   const toggleActive = () => {
     setIsActive(!isActive);
@@ -18,7 +29,7 @@ const MainNavbar = () => {
   const [slideIndex, setSlideIndex] = React.useState(0);
 
   return (
-    <nav className="main_nav">
+    <nav className={`main_nav ${isNavbarFixed ? "fixed" : ""}`}>
       <div className="container">
         <div className="nav_wrapper">
           <div className="logo">

@@ -6,15 +6,30 @@
 
 
 .main_nav {
-    background: #000000e1;
+	position: absolute;
+	top: 0;
+	left: 0;
+    background: transparent;
+	z-index: 999;
+	width: 100%;
+	transition: all 0.5s;
 
 .nav_wrapper {
+	transition: all 0.3s;
+
 	display: flex;
-	padding: 1rem 0;
+	// padding: 2rem 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	justify-content: space-between;
 	.logo {
+		@include flex_center;
+		a {
+			font-size: 0;
+			line-height: 0;
+		}
 		img {
-			width: 152px;
+			width: 162px;
 		}
 	}
 	.menu_btn {
@@ -33,11 +48,11 @@
         z-index: 1000;
         &:hover {
             background: $primary_clr;
-
         }
 	}
 }
 .menu_btn {
+	background-color: rgba(217, 217, 217, 0.2509803922);
 	.to_open {
 		width: 100%;
 		display: flex;
@@ -129,7 +144,31 @@
 		visibility: visible;
 	}
 }
+}
 
+.main_nav.fixed {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	animation-name: fade_in_up;
+	animation-duration: 1s;
+
+	.nav_wrapper {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+@keyframes fade_in_up {
+	from {
+		opacity: 0;
+		top: -90px;
+	}
+
+	to {
+		opacity: 1;
+		top: 0;
+	}
 }
 
 // =====================================
