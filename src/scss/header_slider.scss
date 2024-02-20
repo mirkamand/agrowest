@@ -50,6 +50,12 @@
                 flex-direction: column;
                 row-gap: 25px;
                 max-width: 760px;
+                @include respond_small {
+                    max-width: auto;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .title {
                     @include primary_text_title;
                     // font-size: 33px;

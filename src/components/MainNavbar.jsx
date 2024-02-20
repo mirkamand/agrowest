@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { menu_data } from "../data/data";
 import MenuBtn from "./MenuBtn";
 import SliderOverlayMenu from "./SliderOverlayMenu";
@@ -21,6 +21,8 @@ const MainNavbar = () => {
   const toggleActive = () => {
     setIsActive(!isActive);
   };
+
+  document.body.style.overflowY = isActive ? "hidden" : "auto";
 
   const linkActiveHandler = (linkId) => {
     setIsLinkActive(linkId);

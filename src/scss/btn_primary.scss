@@ -7,6 +7,7 @@
         text-decoration: none;
         }
     max-width: 230px;
+    min-width: 200px;
     min-height: 56px;
     @include flex_center;
     background-color: $primary_clr;
