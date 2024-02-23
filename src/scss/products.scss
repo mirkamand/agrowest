@@ -8,8 +8,11 @@
         margin-bottom: 30px;
 
         .title {
+            min-width: 143px;
             @include flex_center;
             @include primary_text_title;
+            color: #373D3F;
+
             background-image: url("../images/logo.svg");
             background-size: contain;
             background-repeat: no-repeat;
@@ -28,6 +31,10 @@
             @include primary_text;
             @include flex_center;
             color: $primary_clr;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     .products_slider {

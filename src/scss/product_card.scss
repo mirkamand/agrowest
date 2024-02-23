@@ -40,6 +40,7 @@
         align-items: center;
         flex-direction: column;
         gap: 0.625rem;
+        color: $primary_text_clr;
 
         @include respond_small {
             gap: 0.3rem;
