@@ -1,8 +1,8 @@
 const about_data = [
   {
     id: 1,
-    img1: "image/about1.jpg",
-    img2: "image/about2.jpg",
+    img1: "image/about/about1.jpg",
+    img2: "image/about/about2.jpg",
     title:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
     subtitle:
