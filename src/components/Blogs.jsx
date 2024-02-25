@@ -7,6 +7,8 @@ import { blogs_data } from "../data/data";
 import "swiper/css";
 import "swiper/css/pagination";
 
+const bg = "/image/logo.svg";
+
 // import required modules
 
 function BlogsTemplate({ data }) {

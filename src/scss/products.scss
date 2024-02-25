@@ -11,8 +11,7 @@
             min-width: 143px;
             @include flex_center;
             @include primary_text_title;
-            color: #373D3F;
-
+            color: $primary_text_clr;
             background-image: url("../images/logo.svg");
             background-size: contain;
             background-repeat: no-repeat;
