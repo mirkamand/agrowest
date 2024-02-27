@@ -254,12 +254,13 @@
                 @include respond_large {
 					text-align: center;
 					justify-content: center;
-					row-gap:40px;
+					font-size: 30px;
+					row-gap:20px;
                 }
-				// @include respond_medium_height {
-				// 	font-size: 25px;
-				// 	row-gap: 25px;
-				// }
+
+				@include respond_medium {
+					font-size: 20px;
+                }
 
                 .menu_item {
                     a {

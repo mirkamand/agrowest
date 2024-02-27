@@ -19,6 +19,14 @@ footer {
             font-weight: 600;
             font-size: 18px;
             color: #fff;
+            &:after {
+                content: "";
+                display: block;
+                width: 55px;
+                height: 2px;
+                background-color: $primary_clr;
+                margin-top: 0.5rem;
+            }
         }
 		a {
 			display: block;
@@ -45,7 +53,6 @@ footer {
                 font-size: 18px;
                 color: #fff;
                 background-color: transparent;
-
             }
             button {
                 background-color: transparent;
