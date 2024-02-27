@@ -154,6 +154,10 @@
 	.nav_wrapper {
 		padding: 1rem 0;
 	}
+
+	.languages_wrapper {
+		top: 30px !important;
+	}
 }
 
 @keyframes fade_in_up {
@@ -203,7 +207,7 @@
 
 		.languages_wrapper {
 			position: absolute;
-			top: 30px;
+			top: 48px;
 			right: 110px;
 
 			.languages ul {

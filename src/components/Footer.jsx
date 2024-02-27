@@ -59,7 +59,10 @@ const Footer = () => {
             <div className="search_bar">
               <input type="text" placeholder="Axtar" />
               <button type="submit">
-                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <i
+                  className="fa-solid fa-magnifying-glass"
+                  aria-hidden="true"
+                ></i>
               </button>
             </div>
 

@@ -22,6 +22,12 @@ const MainNavbar = () => {
     setIsActive(!isActive);
   };
 
+  if (isActive) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
   document.body.style.overflowY = isActive ? "hidden" : "auto";
 
   const linkActiveHandler = (linkId) => {
