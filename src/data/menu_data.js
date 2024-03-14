@@ -1,7 +1,7 @@
 const menu_data = [
   { id: 1, name: "Haqqımızda", path: "/about" },
   { id: 2, name: "Missiyamız", path: "/mission" },
-  { id: 3, name: "Banan yetişdirilmə müəssisəsi", path: "#" },
+  { id: 3, name: "Banan yetişdirilmə müəssisəsi", path: "locate_banana" },
   { id: 4, name: "Meyvələr", path: "#" },
   { id: 5, name: "Tərəvəzlər", path: "#" },
   { id: 6, name: "Galereya", path: "#" },

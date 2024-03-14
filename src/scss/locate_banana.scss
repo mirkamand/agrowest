@@ -1,0 +1,72 @@
+.locate_banana_section {
+    margin: 4rem 0;
+
+    .locate_banana_wrapper {
+        display: flex;
+        gap: 1rem;
+
+
+        @include respond_medium {
+            flex-direction: column;
+                &:nth-child(2n) {
+                        .frame {
+                            order: 1;
+                        }
+                    }
+        }
+        &:nth-child(2n+1) {
+        margin-bottom: 1.5rem;
+
+            .frame {
+                order: 1;
+            }
+        }
+        .frame {
+            flex-basis: 100%;
+            line-height: 0;
+            font-size: 0;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .text_container {
+            flex-basis: 100%;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                margin: 1.5rem 0;
+                img {
+                    width: 40px;
+                    margin: 0 1rem;
+                }
+                span {
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $primary_clr;
+                    opacity: 0.35;
+                }
+            }
+
+            .title {
+                @include primary_text_title;
+                text-align: center;
+            }
+
+            .subtitle {
+                @include primary_text;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid rgba(142, 197, 60, 0.35);
+                padding-bottom: 1.5rem;
+            }
+
+            .text {
+                @include primary_text;
+                text-align: center;
+            }
+        }
+    }
+}

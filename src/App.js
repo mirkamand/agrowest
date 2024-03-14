@@ -4,6 +4,7 @@ import RootLayout from "./components/RootLayout";
 import AboutPage from "./pages/AboutPage";
 import MissionPage from "./pages/MissionPage";
 import ProductDetails from "./components/ProductDetails";
+import LocateBananaPage from "./pages/LocateBananaPage";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <AboutPage /> },
       { path: "/products/:productSlug", element: <ProductDetails /> },
       { path: "/mission", element: <MissionPage /> },
+      { path: "/locate_banana", element: <LocateBananaPage /> },
     ],
   },
 ]);

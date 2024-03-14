@@ -7,7 +7,7 @@ const MissionPage = () => {
       <section className="mission_section">
         <div className="container">
           {mission_data.map((data) => (
-            <div className="mission_wrapper">
+            <div className="mission_wrapper" key={data.id}>
               <div className="title">{data.title}</div>
               <div className="logo">
                 <span></span> <img src="image/logo.svg" alt="" /> <span></span>

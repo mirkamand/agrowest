@@ -6,6 +6,7 @@ import products_data from "./products_data";
 import blogs_data from "./blogs_data";
 import sponsors_data from "./sponsors_data";
 import mission_data from "./mission_data";
+import locate_banana_data from "./locate_banana_data";
 
 export {
   menu_data,
@@ -16,4 +17,5 @@ export {
   blogs_data,
   sponsors_data,
   mission_data,
+  locate_banana_data,
 };
