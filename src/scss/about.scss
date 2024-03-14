@@ -1,4 +1,5 @@
 .about_section {
+.about_card {
     display: flex;
     align-items: center;
     margin: 4rem 0;
@@ -6,6 +7,10 @@
 
     @include respond_medium {
         flex-direction: column;
+    }
+
+    .about_text {
+        flex-grow: 1;
     }
 
     .images_container {
@@ -65,4 +70,17 @@
             }
         }
     }
+}
+
+.about_text {
+    margin: 5rem 0;
+    @include primary_text;
+    display: flex;
+    gap: 3rem;
+    text-align: justify;
+
+    @include respond_medium {
+        flex-direction: column;
+    }
+}
 }

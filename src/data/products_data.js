@@ -2,7 +2,7 @@ const products_data = [
   {
     id: 1,
     img: "/image/products/apple_red.png",
-    name: "Alma",
+    name: "Alma qırmızı",
     color: "qırmızı",
     rating: 4,
     price: 3,
@@ -11,7 +11,7 @@ const products_data = [
   {
     id: 2,
     img: "/image/products/apple_green.png",
-    name: "Alma",
+    name: "Alma yaşıl",
     color: "yaşıl",
     rating: 3,
     price: 3.5,

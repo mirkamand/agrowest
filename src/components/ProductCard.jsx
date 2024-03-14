@@ -1,11 +1,13 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ img, rating, name, color = "", price, code }) => {
   const azn_logo = "₼";
+  const link = encodeURIComponent(name.trim().toLocaleLowerCase());
   return (
     <div>
-      <a href="#" className="product_card">
+      <Link to={`/products/${link}`} className="product_card">
         <div className="frame">
           <img src={img} alt="" />
         </div>
@@ -26,7 +28,7 @@ const ProductCard = ({ img, rating, name, color = "", price, code }) => {
           <div className="price">{`${price} ${azn_logo}`}</div>
           <div className="code">{`kod: ${code}`}</div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

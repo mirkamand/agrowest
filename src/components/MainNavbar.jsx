@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { menu_data } from "../data/data";
 import MenuBtn from "./MenuBtn";
 import SliderOverlayMenu from "./SliderOverlayMenu";
+import { Link } from "react-router-dom";
 
 const MainNavbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -41,9 +42,9 @@ const MainNavbar = () => {
       <div className="container">
         <div className="nav_wrapper">
           <div className="logo">
-            <a href="#">
+            <Link to="/">
               <img src="/image/main_logo.png" alt="" />
-            </a>
+            </Link>
           </div>
           <MenuBtn isActive={isActive} onClick={toggleActive} />
           <div className={`menu_overlay ${isActive ? "active" : ""}`}>
@@ -69,18 +70,19 @@ const MainNavbar = () => {
                 <ul className="menu_items">
                   {menu_data.map((data, index) => (
                     <li className="menu_item" key={data.id}>
-                      <a
-                        href={data.path}
+                      <Link
+                        to={data.path}
                         onMouseOver={() => setSlideIndex(index)}
                         onMouseOut={() => setSlideIndex(isLinkActive)}
                         onClick={() => {
                           linkActiveHandler(index);
                           setSlideIndex(index);
+                          toggleActive();
                         }}
                         className={`${isLinkActive == index ? "active" : ""}`}
                       >
                         {data.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

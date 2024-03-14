@@ -1,23 +1,25 @@
-import HeaderSlider from "./components/HeaderSlider";
-import MainNavbar from "./components/MainNavbar";
-import About from "./components/About";
-import Products from "./components/Products";
-import Blogs from "./components/Blogs";
-import Sponsors from "./components/Sponsors";
-import Footer from "./components/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import RootLayout from "./components/RootLayout";
+import AboutPage from "./pages/AboutPage";
+import MissionPage from "./pages/MissionPage";
+import ProductDetails from "./components/ProductDetails";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "", element: <HomePage /> },
+      { path: "/about", element: <AboutPage /> },
+      { path: "/products/:productSlug", element: <ProductDetails /> },
+      { path: "/mission", element: <MissionPage /> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <MainNavbar />
-      <HeaderSlider />
-      <About />
-      <Products />
-      <Blogs />
-      <Sponsors />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

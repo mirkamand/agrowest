@@ -1,0 +1,46 @@
+.mission_section {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        @include primary_text_title;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+        img {
+            width: 40px;
+            margin: 0 1rem;
+        }
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $primary_clr;
+            opacity: 0.35;
+        }
+    }
+    .subtitle {
+        @include primary_text;
+        max-width: 800px;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .frame {
+        margin: 1.5rem 0;
+        img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.text {
+    @include primary_text;
+    text-align: justify;
+}
+}

@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const BtnPrimary = () => {
+const BtnPrimary = ({ path = "/" }) => {
   return (
-    <a href="#" type="button" className="btn_primary">
+    <Link to={path} className="btn_primary">
       Ətraflı
-    </a>
+    </Link>
   );
 };
 
