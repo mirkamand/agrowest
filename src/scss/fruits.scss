@@ -1,0 +1,8 @@
+.fruits_section {
+    .fruits {
+        border: 1px solid red;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

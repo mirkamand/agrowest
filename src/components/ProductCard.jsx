@@ -2,9 +2,9 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ img, rating, name, color = "", price, code }) => {
+const ProductCard = ({ img, rating, name, color = "", price, code, id }) => {
   const azn_logo = "₼";
-  const link = encodeURIComponent(name.trim().toLocaleLowerCase());
+  const link = encodeURIComponent(id);
   return (
     <div>
       <Link to={`/products/${link}`} className="product_card">

@@ -67,6 +67,7 @@ const Products = () => {
                 price={data.price}
                 code={data.code}
                 rating={data.rating}
+                id={data.id}
               />
             </SwiperSlide>
           ))}
