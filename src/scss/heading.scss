@@ -1,0 +1,45 @@
+.products_heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 120px;
+    // height: 100px;
+
+    margin-bottom: 30px;
+
+    .title {
+        min-width: 143px;
+        display: flex;
+        align-items: center;
+        @include primary_text_title;
+        color: $primary_text_clr;
+        background-image: url("../images/logo.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    @include respond_small {
+        flex-direction: column;
+        .title {
+            flex-grow: 1;
+            background-position: center;
+            justify-content: center;
+        }
+    }
+
+    a {
+        @include primary_text;
+        @include flex_center;
+        color: $primary_clr;
+        @include respond_medium {
+            margin-right: 1.8rem;
+        }
+        @include respond_small {
+            margin-right: 0;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

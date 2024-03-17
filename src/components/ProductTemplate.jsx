@@ -1,6 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const ProductTemplate = ({ img, name, rating, price, code, text, slides }) => {
   const azn_logo = "₼";
@@ -33,17 +34,18 @@ const ProductTemplate = ({ img, name, rating, price, code, text, slides }) => {
 
         <div className="product_slider_wrapper">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
+            modules={[Pagination, Autoplay]}
+            autoplay={{
+              delay: 2000,
+            }}
             className="product_slider"
             breakpoints={{
               0: {
-                slidesPerView: 1.2,
+                slidesPerView: 1,
                 spaceBetween: 10,
-                slidesOffsetAfter: 80,
               },
               768: {
-                slidesPerView: 2.2,
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
               1024: {

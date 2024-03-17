@@ -6,6 +6,7 @@ import { blogs_data } from "../data/data";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Heading from "./Heading";
 
 const bg = "/image/logo.svg";
 
@@ -31,11 +32,7 @@ const Blogs = () => {
   return (
     <section className="blogs_section">
       <div className="container">
-        <div className="products_heading">
-          <div className="title">Blogs</div>
-          <a href="#">Hamısına bax</a>
-        </div>
-
+        <Heading title="Bloglar" />
         <Swiper
           slidesPerView={3}
           spaceBetween={30}

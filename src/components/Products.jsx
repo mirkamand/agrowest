@@ -10,15 +10,13 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Grid, Pagination, Autoplay } from "swiper/modules";
+import Heading from "./Heading";
 
 const Products = () => {
   return (
     <section className="products_section">
       <div className="container">
-        <div className="products_heading">
-          <div className="title">Məhsullar</div>
-          <a href="#">Hamısına bax</a>
-        </div>
+        <Heading title="Məhsullar" />
         <Swiper
           className="products_slider"
           autoplay={{

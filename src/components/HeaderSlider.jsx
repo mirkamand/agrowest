@@ -5,7 +5,7 @@ import { header_slider_data } from "../data/data";
 // import "../scss/header_slider";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import BtnPrimary from "./BtnPrimary";
 
 function SlideTemplate({ data }) {
@@ -29,10 +29,14 @@ const HeaderSlider = () => {
   return (
     <>
       <Swiper
+        autoplay={{
+          duration: 2500,
+          disableOnInteraction: true,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="header_slider"
       >
         {header_slider_data.map((data) => (
