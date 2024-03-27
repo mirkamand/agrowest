@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import ErrorPage from "../pages/ErrorPage";
 
 const ProductDetails = () => {
   const { productSlug } = useParams();
@@ -71,7 +72,7 @@ const ProductDetails = () => {
               >
                 {products_data.map((data) => (
                   <div>
-                    {product.id != data.id ? (
+                    {product.id !== data.id ? (
                       <SwiperSlide key={data.id}>
                         <ProductCard
                           name={data.name}
@@ -91,7 +92,7 @@ const ProductDetails = () => {
           </div>
         </div>
       ) : (
-        "Error"
+        <ErrorPage />
       )}
     </>
   );

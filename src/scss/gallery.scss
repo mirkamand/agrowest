@@ -1,0 +1,64 @@
+.nav-pills{
+    .nav-link {
+    color: black;
+    @include primary_text;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: $primary_clr;
+}
+
+.gallery_section {
+    margin: 4rem 0;
+    .tabs {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .gallery_slider {
+        .card {
+            border: none;
+            .frame{
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                @include flex_center;
+                .overlay {
+                    position: absolute;
+                    width: 90%;
+                    height: 90%;
+                    background: $primary_clr;
+                    border-radius: 10px;
+                    opacity: 0;
+                    transform: scale(0.3);
+                    @include flex_center;
+                    transition: ease 0.5s;
+
+
+                    .fa-magnifying-glass {
+                        font-size: min(3.4285714286rem,6vh,10vw);
+                        color: white;
+                    }
+                }
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+               .frame > .overlay {
+                    opacity: 0.88;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+

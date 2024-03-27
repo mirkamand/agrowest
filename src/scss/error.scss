@@ -1,0 +1,12 @@
+.error_section {
+    height: 100vh;
+    @include flex_center;
+
+    .text_container {
+        .text {
+            @include primary_text_title;
+            text-align: center;
+            font-size: min(3.4285714286rem,6vh,10vw);
+        }
+    }
+}

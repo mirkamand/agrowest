@@ -7,6 +7,7 @@ const products_data = [
     rating: 4,
     price: 3,
     code: "A3692BH",
+    category: "alma",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/apple_slide1.jpg",
@@ -22,6 +23,7 @@ const products_data = [
     rating: 3,
     price: 3.5,
     code: "A3693BH",
+    category: "alma",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/apple_slide1.jpg",
@@ -37,6 +39,7 @@ const products_data = [
     rating: 4,
     price: 8,
     code: "A3694BH",
+    category: "avacado",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/avacado_slide1.jpg",
@@ -52,6 +55,7 @@ const products_data = [
     rating: 3,
     price: 4.5,
     code: "A3695BH",
+    category: "banana",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/banana_slide1.jpg",
@@ -67,6 +71,7 @@ const products_data = [
     rating: 3,
     price: 6,
     code: "A3696BH",
+    category: "blackberry",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/blackberry_slide1.jpg",
@@ -82,6 +87,7 @@ const products_data = [
     rating: 4,
     price: 2.5,
     code: "A3697BH",
+    category: "apricot",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/apricot_slide1.jpg",
@@ -97,6 +103,7 @@ const products_data = [
     rating: 3,
     price: 5,
     code: "A3698BH",
+    category: "cherry",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/cherry_slide1.jpg",
@@ -112,6 +119,7 @@ const products_data = [
     rating: 5,
     price: 7,
     code: "A3699BH",
+    category: "grape",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     slides: [
       "/image/product_slider/grape_slide1.jpg",

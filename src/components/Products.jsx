@@ -1,6 +1,7 @@
 // import React, { useRef, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import { products_data } from "../data/data";
+import Heading from "./Heading";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -10,7 +11,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Grid, Pagination, Autoplay } from "swiper/modules";
-import Heading from "./Heading";
 
 const Products = () => {
   return (

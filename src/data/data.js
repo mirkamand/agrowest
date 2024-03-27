@@ -7,6 +7,7 @@ import blogs_data from "./blogs_data";
 import sponsors_data from "./sponsors_data";
 import mission_data from "./mission_data";
 import locate_banana_data from "./locate_banana_data";
+import gallery_data from "./gallery_data";
 
 export {
   menu_data,
@@ -18,4 +19,5 @@ export {
   sponsors_data,
   mission_data,
   locate_banana_data,
+  gallery_data,
 };

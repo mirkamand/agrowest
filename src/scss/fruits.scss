@@ -1,8 +1,32 @@
 .fruits_section {
-    .fruits {
+    margin: 4rem 0;
+  .fruits_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .left_side {
+        max-width: 230px;
         border: 1px solid red;
-        display: grid;
-        gap: 50px;
-        grid-template-columns: repeat(3, 1fr);
     }
+
+    .right_side {
+        border: 1px solid red;
+        width: 100%;
+
+        .fruits {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+    }
+  }
 }
+
+  // .fruits {
+    //     border: 1px solid red;
+    //     display: grid;
+    //     gap: 50px;
+    //     grid-template-columns: repeat(3, 1fr);
+    // }
