@@ -8,8 +8,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Heading from "./Heading";
 
-const bg = "/image/logo.svg";
-
 // import required modules
 
 function BlogsTemplate({ data }) {
@@ -28,11 +26,11 @@ function BlogsTemplate({ data }) {
   );
 }
 
-const Blogs = () => {
+const Blogs = ({ blogs_data, heading = true }) => {
   return (
     <section className="blogs_section">
       <div className="container">
-        <Heading title="Bloglar" />
+        {heading ? <Heading title="Bloglar" /> : null}
         <Swiper
           slidesPerView={3}
           spaceBetween={30}

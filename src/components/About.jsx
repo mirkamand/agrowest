@@ -24,7 +24,9 @@ const About = () => {
                 <div className="title">{data.title}</div>
                 <div className="subtitle">{data.subtitle}</div>
                 <div className="text">{data.descr}</div>
-                {current_path == "/about" ? null : <BtnPrimary path="/about" />}
+                {current_path == "/about" ? null : (
+                  <BtnPrimary path="/about" title="Ətraflı" />
+                )}
               </div>
             </div>
             {current_path == "/about" ? (

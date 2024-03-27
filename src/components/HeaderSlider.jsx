@@ -18,7 +18,7 @@ function SlideTemplate({ data }) {
         <div className="text_container">
           <div className="title">{data.title}</div>
           <div className="subtitle">{data.subtitle}</div>
-          <BtnPrimary />
+          <BtnPrimary title="Ətraflı" />
         </div>
       </div>
     </div>

@@ -26,6 +26,10 @@ const Gallery = ({ gallery_data }) => {
         breakpoints={{
           0: {
             slidesPerView: 1,
+            grid: {
+              fill: "row",
+              rows: 2,
+            },
           },
           400: {
             slidesPerView: 1,

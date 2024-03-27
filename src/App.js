@@ -9,6 +9,8 @@ import FruitsPage from "./pages/FruitsPage";
 import ErrorPage from "./pages/ErrorPage";
 import "bootstrap/dist/js/bootstrap.min.js";
 import GalleryPage from "./pages/GalleryPage";
+import BlogsPage from "./pages/BlogsPage";
+import ContactPage from "./pages/ContactPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
       { path: "/locate_banana", element: <LocateBananaPage /> },
       { path: "/fruits", element: <FruitsPage /> },
       { path: "/gallery", element: <GalleryPage /> },
+      { path: "/blogs", element: <BlogsPage /> },
+      { path: "/contact", element: <ContactPage /> },
     ],
   },
 ]);

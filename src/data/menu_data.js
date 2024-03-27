@@ -5,7 +5,7 @@ const menu_data = [
   { id: 4, name: "Meyvələr", path: "/fruits" },
   { id: 5, name: "Tərəvəzlər", path: "/fruits" },
   { id: 6, name: "Galereya", path: "/gallery" },
-  { id: 7, name: "Bloq", path: "#" },
-  { id: 8, name: "Əlaqə", path: "#" },
+  { id: 7, name: "Bloq", path: "/blogs" },
+  { id: 8, name: "Əlaqə", path: "/contact" },
 ];
 export default menu_data;
