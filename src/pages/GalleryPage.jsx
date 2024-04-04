@@ -15,10 +15,10 @@ const GalleryPage = () => {
           className="mb-3 tabs"
           variant="pills"
         >
-          <Tab eventKey="product" title="Məhsullar">
+          <Tab eventKey="product" className="tab" title="Məhsullar">
             <Gallery gallery_data={gallery_data} />
           </Tab>
-          <Tab eventKey="gardens" title="Bağlar">
+          <Tab eventKey="gardens" className="tab" title="Bağlar">
             <Gallery gallery_data={[...gallery_data].reverse()} />
           </Tab>
         </Tabs>

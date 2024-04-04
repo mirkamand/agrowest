@@ -19,9 +19,22 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 1rem;
-    }
 
-    .gallery_slider {
+        #tab-tab-product, #tab-tab-gardens {
+            cursor: pointer;
+        }
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        @include respond_medium {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include respond_small {
+            grid-template-columns: 1fr;
+        }
         .card {
             border: none;
             .frame{
