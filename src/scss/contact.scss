@@ -55,7 +55,8 @@
             gap: 30px;
 
             @include respond_small {
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
             }
 
             .full {

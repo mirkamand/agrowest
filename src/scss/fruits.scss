@@ -4,14 +4,27 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    gap: 40px;
 
-    .left_side {
-        max-width: 230px;
-        border: 1px solid red;
+    @include respond_small {
+      flex-direction: column;
     }
 
-    .right_side {
-        border: 1px solid red;
+      .left_side {
+        .ctgs {
+          width: 230px;
+
+          @include respond_small {
+            width: 100%;
+          }
+
+          .checkbox {
+            white-space: nowrap;
+          }
+        }
+     }
+
+      .right_side {
         width: 100%;
 
         .fruits {
@@ -19,14 +32,31 @@
             width: 100%;
             grid-template-columns: repeat(3, 1fr);
             gap: 40px;
+
+            @include respond_medium {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include respond_small {
+              grid-template-columns: 1fr;
+            }
         }
-    }
+      }
+
+
   }
 }
 
-  // .fruits {
-    //     border: 1px solid red;
-    //     display: grid;
-    //     gap: 50px;
-    //     grid-template-columns: repeat(3, 1fr);
-    // }
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $primary_clr !important;
+  color: white !important;
+}
+
+.form-check-input:checked {
+  background-color: $primary_clr !important;
+  border-color: $primary_clr !important;
+}

@@ -9,6 +9,7 @@ import mission_data from "./mission_data";
 import locate_banana_data from "./locate_banana_data";
 import gallery_data from "./gallery_data";
 import blogs_data2 from "./blogs_data2";
+import category_data from "./category_data";
 
 export {
   menu_data,
@@ -22,4 +23,5 @@ export {
   locate_banana_data,
   gallery_data,
   blogs_data2,
+  category_data,
 };
